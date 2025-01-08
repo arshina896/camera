@@ -13,21 +13,21 @@
 </head>
 
 <body>
-    <div class="container  bg-info-subtle vh-100 ">
-
-        <div class="container w-50 position-absolute top-50 start-50 translate-middle">
-            <video autoplay muted playsinline id="videoLive"></video><br>
-            <div class="d-flex justify-content-center">
-
-                <button type="button" id="buttonStart" class="btn btn-primary ">Start</button>
-                <button type="button" id="buttonStop" disabled class="btn btn-primary">Stop</button>
-                <a href="#videoRecorded" style="text-decoration: none;" class="btn btn-primary"
-                    download="#videoRecorded">download</a>
+    <div class="container bg-info-subtle vh-100 d-flex align-items-center justify-content-center">
+        <div class="row w-100">
+            <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                <div class="video-container text-center">
+                    <video autoplay muted playsinline id="videoLive" class="w-100  rounded "></video>
+                    <div class="d-flex justify-content-center mt-4 flex-wrap">
+                        <button type="button" id="buttonStart" class="btn btn-primary mx-2 mb-2">Start</button>
+                        <button type="button" id="buttonStop" disabled class="btn btn-primary mx-2 mb-2">Stop</button>
+                        <a href="#videoRecorded" class="btn btn-primary mx-2 mb-2" download="#videoRecorded">Download</a>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </div>
+    
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
